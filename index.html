@@ -1,0 +1,81 @@
+
+<body>
+	<head>
+		<title>Emojifier</title>
+	</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	href="{{ url_for('static', filename='mainpage.css')}}"
+	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" >
+
+	
+		<div>
+			<nav>
+				<h4 class="title2">EMOJIFIER:<p class="tag">Emojify your Emotions</p>
+				</h4>
+	
+			</nav>
+		</div>
+	
+		<div class="text-box">
+	
+	
+	
+	
+			<h1>Predict Your Emotions</h1>
+	
+			<p>
+				<br>
+				<br>
+			<p> Emotions differ humans from machines. Machines cannot understand human emotions on their own.</p><br>
+			<p>We here, Using a machine learning algorithm, predict your best possible emotion</p><br>
+			<p> And help computer understand what you're feeling.</p><br>
+			</p>
+			</div>
+			<div>
+			<img src="img.jpg" class="img1" id="img"><br>
+			<img src="img2.jpg" class="img2" id="img"><br>
+			</div>
+			<div>
+			<button type="button" class="buttons" id="start">Start</button>
+			<button type="button" class="buttons" id="stop">Stop</button>
+		</div>
+	
+		<div class="fer" id="ml"></div>
+	
+		<div class="egen" id="ml"></div>
+		<div>
+			<footer class="foot">
+				<p>Designed By :-
+					Shubham Logani Prachi Gupta, Kushagra Verma</p>
+					<p class="contact">Contact Us at therealsmurf1843@gmail.com</p>
+			  </footer>
+		</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+
+			
+            <h2 class="mt-5">CAMERA APP by Hemanth Nag</h2>
+			<form method="post" action="{{ url_for('tasks') }}">
+			<input type="submit" value="Stop/Start" name="stop" />
+			<input type="submit" value="Capture" name="click"/>
+			<input type="submit" value="Grey" name="grey" />
+			<input type="submit" value="Negative" name="neg" />
+			<input type="submit" value="Face Only" name="face" />
+			<input type="submit" value="Start/Stop Recording" name="rec" />
+			</form>
+            <img src="{{ url_for('video_feed') }}" height="80%">
+			<h3 style="font-family:courier;">Instructions:</h3>
+			<ol style="font-family:courier;">
+			<li>Stop/Start--Toggle between stop or start live streaming</li>
+			<li>Capture--Take still-shot and save in the 'shots' directory</li>
+			<li>Grey--Toggle between grayscale and RGB output</li>
+			<li>Negative--Toggle between negative and RGB output</li>
+			<li>Face Only--Shows just your face if present(Toggle on/off)</li> 
+			<li>Start/Stop Recording--Toggle between starting and stopping video recording</li> </ol>	
+			
+        </div>
+    </div>
+</div>
+</body>

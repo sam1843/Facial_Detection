@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emojifier</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div>
+        <nav>
+            <h4 class="title2">EMOJIFIER:<p class="tag">Emojify your Emotions</p>
+            </h4>
+
+        </nav>
+    </div>
+
+    <div class="text-box">
+
+
+
+
+        <h1>Predict Your Emotions</h1>
+
+        <p>
+            <br>
+            <br>
+        <p> Emotions differ humans from machines. Machines cannot understand human emotions on their own.</p><br>
+        <p>We here, Using a machine learning algorithm, predict your best possible emotion</p><br>
+        <p> And help computer understand what you're feeling.</p><br>
+        </p>
+        </div>
+        <div>
+        <img src="img.jpg" class="img1" id="img"><br>
+        <img src="img2.jpg" class="img2" id="img"><br>
+        </div>
+        <div>
+        <button type="button" class="buttons" id="start">Start</button>
+        <button type="button" class="buttons" id="stop">Stop</button>
+    </div>
+
+    <div class="fer" id="ml"></div>
+
+    <div class="egen" id="ml"></div>
+    <div>
+        <footer class="foot">
+            <p>Designed By :-
+                Shubham Logani Prachi Gupta, Kushagra Verma</p>
+                <p class="contact">Contact Us at therealsmurf1843@gmail.com</p>
+          </footer>
+    </div>
+    <form method="post" action="{{ url_for('tasks') }}">
+        <input type="submit" value="Stop/Start" name="stop" />
+    </form>
+</body>
+
+</html>
